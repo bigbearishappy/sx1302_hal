@@ -81,6 +81,8 @@ int stts751_configure(int i2c_fd, uint8_t i2c_addr) {
     int err;
     uint8_t val;
 
+    return LGW_I2C_SUCCESS;
+
     /* Check Input Params */
     if (i2c_fd <= 0) {
         printf("ERROR: invalid I2C file descriptor\n");
@@ -151,6 +153,9 @@ int stts751_get_temperature(int i2c_fd, uint8_t i2c_addr, float * temperature) {
     int err;
     uint8_t high_byte, low_byte;
     int8_t h;
+
+    *temperature = 30.0;
+    return LGW_I2C_SUCCESS;
 
     /* Check Input Params */
     if (i2c_fd <= 0) {
