@@ -52,7 +52,7 @@ License: Revised BSD License, see LICENSE.TXT file include in the project
 #define READ_ACCESS     0x00
 #define WRITE_ACCESS    0x80
 
-#define LGW_BURST_CHUNK     1024
+#define LGW_BURST_CHUNK     256 
 
 /* -------------------------------------------------------------------------- */
 /* --- PUBLIC FUNCTIONS DEFINITION ------------------------------------------ */
